@@ -1,0 +1,35 @@
+/* Sets up the page background and default font styles */
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Styles for video playback container */
+.video-container {
+  width: 100%;
+  max-width: 640px;
+  max-height: 480px;
+  margin: 20px auto;
+}
+
+/* Styles for input elements and load stream buttons */
+#input-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+input[type='text'] {
+  width: 65%; /* Adjusted to leave space for buttons */
+  padding: 10px;
+  margin-right: 10px;
+  color: black;
+  display: inline-block; /* Ensures alignment with buttons */
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}

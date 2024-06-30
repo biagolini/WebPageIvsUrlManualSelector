@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Streaming with Dynamic Source Loading</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.14.3/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.14.3/video.min.js"></script>
+    <script src="https://player.live-video.net/1.29.0/amazon-ivs-videojs-tech.min.js"></script>
+    <script src="https://player.live-video.net/1.29.0/amazon-ivs-quality-plugin.min.js"></script>
+</head>
+<body>
+    <div id="input-container">
+        <!-- Input fields for streaming URLs -->
+        <input type="text" class="stream-url" placeholder="Enter Streaming URL 1">
+        <button onclick="loadStream(0)">Load Stream 1</button>
+        <br>
+        <input type="text" class="stream-url" placeholder="Enter Streaming URL 2">
+        <button onclick="loadStream(1)">Load Stream 2</button>
+        <br>
+        <input type="text" class="stream-url" placeholder="Enter Streaming URL 3">
+        <button onclick="loadStream(2)">Load Stream 3</button>
+        <br>
+        <input type="text" class="stream-url" placeholder="Enter Streaming URL 4">
+        <button onclick="loadStream(3)">Load Stream 4</button>
+    </div>
+    <div class="video-container">
+        <video id="amazon-ivs-videojs" class="video-js vjs-4-3 vjs-big-play-centered" controls playsinline></video>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

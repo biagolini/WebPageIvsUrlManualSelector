@@ -4,6 +4,7 @@
 
 This project demonstrates how to integrate Amazon Interactive Video Service (IVS) with Video.js, incorporating a quality selection plugin. It offers a hands-on example of setting up a video stream with dynamic quality adjustment options through a user interface.
 
+Check this project at [github pages!](https://biagolini.github.io/WebPageIvsUrlManualSelector/)
 ## Features
 
 - Quality Selection: Users can change the video quality during playback, choosing from the options provided by the stream.
